@@ -1,0 +1,261 @@
+@import 'media-queries';
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 33px;
+    color: black;
+}
+h2{
+    font-size: 26px;
+}
+h3{
+    font-size: 16px;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: #fff;
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 1px solid rgb(241, 241, 241);
+        z-index: 99;
+        ul{
+            display: flex; 
+            justify-content: center; 
+            @include tablet{
+                display: none;
+            }
+            @include mobile{
+                display: none;
+            }
+            a{
+                padding: 30px 0px;
+                margin: 0px 25px;
+                font-size: 15px;
+                @include mobile{
+                    padding: 20px 0px;
+                    font-size: 17px;
+                }
+            }
+        }
+        .icon{
+            display: none;
+            color: black;
+            font-size: 30px;
+            padding: 30px;
+            p{
+                font-size: 18px;
+            }
+            @include tablet{
+                display: block;
+            }
+            @include mobile{
+                display: block;
+            }
+        }
+        #toggle-menu{
+            display: none;
+            width: 100%;
+            height: 380px;
+            overflow-x: hidden;
+            border-bottom: 1px solid rgb(241, 241, 241);
+            border-top: 1px solid rgb(241, 241, 241);
+            @include tablet{
+                display: none;
+            }
+            @include mobile{
+                display: none;
+            }
+            ul{
+                display: none;
+                padding: 10px 0px;
+                background-color: #fff;
+                height: 410px;
+                @include tablet{
+                    display: block;
+                }
+                @include mobile{
+                    display: block;
+                }
+                a{
+                    width: 150px;
+                    display: block;
+                }
+            }
+        }
+    }
+    .movies-container{
+        position: absolute;
+        width: 100%;
+        margin: 80px 0px;
+        @include mobile{
+            margin: 90px 0px;
+        }
+        h1{
+            text-align: center;
+            margin: 40px 0px;
+            @include mobile{
+                font-size: 28px;
+            }
+        }
+        .movies{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0px;
+            justify-content: center;
+            margin-bottom: 40px;
+            .card{
+                background-color: rgb(198, 198, 198);
+                margin: 20px 30px;
+                width: 250px;
+                border-radius: 10px;
+                text-align: center;
+                .info{
+                    padding: 15px 10px;
+                    text-align: center;
+                    line-height: 30px;
+                    .movie-image{
+                        
+                        width: 150px;
+                        height: 200px;
+                        border-radius: 5px;
+                    }
+                    h3{
+                        margin: 10px 0px;
+                    }
+                    button{
+                        background-color: #fff;
+                        border: none;
+                        width: 130px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        padding: 10px 5px;
+                    }
+                }
+            }
+        }
+    }
+    .details-container{
+        width: 100%;
+        position: absolute;
+        margin: 80px 0px;
+        h2{
+            text-align: center;
+            margin: 30px 0px;
+            @include mobile{
+                font-size: 23px;
+            }
+        }
+        .back{
+            background-color: #fff;
+            width: 100%;
+            @include mobile{
+                background-color: rgb(245, 245, 245);
+            }
+            button{
+                background-color: #fff;
+                margin: 10px 25px;
+                border: 1px solid rgb(215, 215, 215);
+                padding: 8px 20px;
+                cursor: pointer; 
+            }
+        }
+        .details{
+            max-width: 100%;
+            display: flex;
+            margin: 10px 0px;
+            margin-bottom: 20px;
+            justify-content: center;
+            @include mobile{
+                margin: 0px 0px;
+            }
+            .card{
+                text-align: center;
+                width: 70%;
+                background-color: rgb(245, 245, 245);
+                line-height: 30px;
+                padding: 20px 0px;
+                @include mobile{
+                    width: 100%;
+                }
+                img{
+                    width: 200px;
+                    object-fit: cover;
+                    height: 300px;
+                }
+                .text{
+                    text-align: left;
+                    padding: 30px 20px;
+                    p{
+                        margin: 10px 0px;
+                        color: rgb(130, 130, 130);
+                        strong{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .billboard-container{
+        position: absolute;
+        width: 100%;
+        margin: 79px 0px;
+        display: flex;
+        padding: 0px 40px;
+        background-color: rgb(227, 227, 227);
+        .billboard{
+            width: 100%;
+            padding: 75px 0px;
+            display: flex;
+            margin: 40px 0px;
+            justify-content: center;
+            flex-wrap: wrap;
+            @include mobile{
+                margin: 0px 0px;
+                padding: 50px 0px;
+            }
+            .begenilenler{
+                border: none;
+                padding: 20px 20px;
+                height: 400px;
+                margin: 20px 30px;
+                text-align: center;
+                width: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-position: center;
+                background-size: cover;
+                background-image: url('https://wallpapercave.com/dwp2x/wp2763337.jpg');
+                h3{
+                    font-size: 25px;
+                }
+            }
+            .populerler{
+                border: none;
+                padding: 20px 20px;
+                width: 300px;
+                margin: 20px 30px;
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-position: center;
+                background-size: cover;
+                background-image: url('https://wallpapercave.com/dwp2x/wp5902093.jpg');
+                h3{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
