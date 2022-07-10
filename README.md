@@ -1,7 +1,7 @@
 ### movies-app
 nextjs ile geliştirdiğim ilk projem. daha önce paylaştığım movie-app ile aralarındaki tek fark bu projede filmin kendi detay sayfasının olması. detayları ve filmlerin fotoğrafını kendi oluşturduğum fake API'den çektim.
 
-### demo
+### görseller
 
 <img width="440" alt="Ekran Resmi 2022-07-10 19 53 48" src="https://user-images.githubusercontent.com/96014554/178154406-3c447bb0-f8af-44be-99b8-e6f020c433ca.png">
 
